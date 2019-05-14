@@ -16,19 +16,19 @@ class App extends Component {
         <Nav />
         <div className="container">
           <div className="row">
-            <div className="col-lg-12 col-sm-4">
+            <div className="col-sm-12 col-lg-4">
               <div className="card">
                 <div className="top"><h2>Lorem</h2></div>
                 <div className="bottom"><img className="picture" src="./images/dance.jpg" /></div>
               </div>
             </div>
-            <div className="col-lg-12 col-sm-4">
+            <div className="col-sm-12 col-lg-4">
               <div className="card">
                 <div className="top"><h2>Ipsum</h2></div>
                 <div className="bottom"><img className="picture" src="./images/hug.jpg" /></div>
               </div>
             </div>
-            <div className="col-lg-12 col-sm-4">
+            <div className="col-sm-12 col-lg-4">
               <div className="card">
                 <div className="top"><h2>Nunc</h2></div>
                 <div className="bottom"><img className="picture" src="./images/wedding.jpg" /></div>
