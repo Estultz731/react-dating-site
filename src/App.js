@@ -1,26 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Nav = () => 
+(<nav>
+  <a className="left" href="#date">Acme Dating Site</a>
+  <a className="right" href="#contact">Contact</a>
+  <a className="right" href="#social">Social</a>
+</nav>)
+
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Nav />
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 col-sm-4">
+              <div className="card">
+                <div className="top"><h2>Lorem</h2></div>
+                <div className="bottom"><img className="picture" src="./images/dance.jpg" /></div>
+              </div>
+            </div>
+            <div className="col-lg-12 col-sm-4">
+              <div className="card">
+                <div className="top"><h2>Ipsum</h2></div>
+                <div className="bottom"><img className="picture" src="./images/hug.jpg" /></div>
+              </div>
+            </div>
+            <div className="col-lg-12 col-sm-4">
+              <div className="card">
+                <div className="top"><h2>Nunc</h2></div>
+                <div className="bottom"><img className="picture" src="./images/wedding.jpg" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
